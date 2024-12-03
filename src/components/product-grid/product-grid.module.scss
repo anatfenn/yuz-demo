@@ -1,0 +1,24 @@
+.productGrid {
+    --minCardSize: 404px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(var(--minCardSize), 100%), 1fr));
+    gap: 20px 4px;
+}
+
+.productLink {
+    display: block;
+}
+
+.clearFiltersButton {
+    margin-top: 32px;
+}
+
+.clearFiltersButton:hover {
+    color: rgba(23, 17, 13, 0.7);
+}
+
+@media (max-width: 1024px) {
+    .productGrid {
+        --minCardSize: 250px;
+    }
+}
